@@ -7,8 +7,7 @@ This is the initial public source code release for Aether Anti-Cheat. The code i
 
 ## Features
 
-- **DMA Detection**
-- **Kernel Driver**
+ - **Kernel Driver**
 - **BAM/Prefetch Search**
 - **Process Scanning**: DPS, PCSvc, Clipboard, LSASS, CSRSS, etc.
 - **Raw Disk Search**
