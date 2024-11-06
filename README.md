@@ -1,7 +1,7 @@
-# Aether Anti-Cheat
+# Aether Scanner
 
  
-This is the initial public source code release for Aether Anti-Cheat. The code is fully functional, with a paid version planned soon. Below are the primary features included in this version.
+This is the initial public source code release for Aether Scanner. The code is fully functional, with a paid version planned soon. Below are the primary features included in this version.
 
 ---
 
@@ -22,7 +22,7 @@ This is the initial public source code release for Aether Anti-Cheat. The code i
 
 ### Compiling Instructions
 
-To compile Aether Anti-Cheat:
+To compile Aether Scanner:
 
 1. Open the solution in Visual Studio 2019 or 2022.
 2. Set the build configuration to **Release x64**.
