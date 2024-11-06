@@ -9,15 +9,11 @@ This is the initial public source code release for Aether Anti-Cheat. The code i
 
 - **DMA Detection**
 - **Kernel Driver**
-- **Public Data Pointer Drivers**
 - **BAM/Prefetch Search**
-- **RAM Memory Scanning**
 - **Process Scanning**: DPS, PCSvc, Clipboard, LSASS, CSRSS, etc.
 - **Raw Disk Search**
 - **Browser History Search**
 - **USN Journal Check**
-- **Application Blacklist**
-- **File Recovery**
 - **$J File Check**
 - **FiveM Module Check**
 - **NVIDIA GeForce Stream-Proof Search**
