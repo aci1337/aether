@@ -1,4 +1,7 @@
- #include <ntddk.h>
+// Version cleaned by AI
+// It was full of junk code and much more, and decided to leave it more "readable"
+
+#include <ntddk.h>
 #include <ntstrsafe.h>
 
  extern "C" {
@@ -80,8 +83,7 @@
     AETHERS_DELETE_FILE
 } AETHERS_OPERATION_TYPE;
 
-// Structure for operation requests
-#pragma pack(push, 1)
+ #pragma pack(push, 1)
 typedef struct _AETHERS_OPERATION_REQUEST {
     AETHERS_OPERATION_TYPE operation;
     union {
@@ -111,8 +113,7 @@ typedef struct _AETHERS_OPERATION_REQUEST {
 } AETHERS_OPERATION_RESPONSE, * PAETHERS_OPERATION_RESPONSE;
 #pragma pack(pop)
 
-// Function prototypes
-DRIVER_UNLOAD UnloadDrv;
+ DRIVER_UNLOAD UnloadDrv;
 NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath);
 NTSTATUS InitDriver(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath);
 NTSTATUS DispatchHandler(PDEVICE_OBJECT DeviceObject, PIRP Irp);
@@ -410,8 +411,7 @@ NTSTATUS AethersDeleteFile(PCWSTR filePath);
     NTSTATUS status = STATUS_SUCCESS;
     PEPROCESS targetProcess = NULL;
 
-    // Lookup the target process by PID
-    status = PsLookupProcessByProcessId((HANDLE)pid, &targetProcess);
+     status = PsLookupProcessByProcessId((HANDLE)pid, &targetProcess);
     if (!NT_SUCCESS(status)) {
         DbgPrint("[Aethers] PsLookupProcessByProcessId failed. PID: %lu Status: 0x%X\n", pid, status);
         return status;
